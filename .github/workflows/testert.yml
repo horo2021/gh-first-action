@@ -1,0 +1,8 @@
+name: tester workflow 
+on: workflow_dispatch 
+jobs: 
+  tester-job:
+    runs-on: ubunto-latest 
+    steps: 
+      - name: tester-step
+        run: echo "hello world"
