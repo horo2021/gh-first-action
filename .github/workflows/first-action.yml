@@ -1,10 +1,11 @@
-name: First Workflow
-on: workflow_dispatch
+name: first workflow
+on:
+  workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting
-        run: echo "Hello World!"
-      - name: Print goodbye
-        run: echo "Done - bye!"
+      - name: print greeting  # Fixed indentation and added a space in the name
+        run: echo "hello world"  # Fixed indentation and changed "weorld" to "world"
+      - name: print good bye  # Fixed indentation and added a space in the name
+        run: echo "good bye world"  # Fixed indentation and removed unnecessary "+"
